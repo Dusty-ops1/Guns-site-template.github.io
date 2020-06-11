@@ -1,171 +1,637 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="ger.css">
-	<link rel="stylesheet" type="text/css" href="media.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<title>Guns</title>
+	<title>Web Project</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
 </head>
 <body>
-	<!-- navbar -->
-	<div class="topnav" id="myTopnav">
-		<div class="contents">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Weapons</a>
-  <a href="file:///C:/Users/User/Desktop/Gallery%20page%20for%20Guns%20shop/Page.html">Gallery</a>
-  <a href="#contact">Attachments</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  <div class="register">
-  <a class="login" href="#about"><i class="fas fa-sign-out-alt"></i></a>
-  <a class="login" href="#about"><i class="fas fa-user-circle"></i></a>
-  </div>  
-</div>
-	<!-- xnavbar -->
-			<!-- upscrollbutton -->
-			<!-- xupscrollbutton -->
-	<!-- Slider -->
-	<div class='csslider1 autoplay '>
-		<input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
-		<input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
-		<input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
-		<input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
-		<input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
-		<ul>
-			<div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
-				<img src="http://cssslider.com/sliders/pen/images/buns.jpg" style="width: 100%;">
+	<header>
+		<div class="nav">
+			<img src="images/MenuIcon.png" class="menubaricon">
+			<div class="vline"></div>
+			<img src="images/Portland.png" class="portlandlogo">
+			<div class="mainmenubox">				
+				<ul class="topmenu">
+						<li><a href="">Home</a></li>
+						<li><a href="">Devices</a></li>
+					    <li><a href="">Delivery & Payment</a></li>
+						<li><a href="">Guarantee</a></li>
+						<li><a href="">About Us</a></li>
+				</ul>
 			</div>
-			<li class='num0 img'>
-				 <a  target=""><img src='foto/katana1.jpg' alt='Katana' title='katana' /> </a> 
-			</li>
-			<li class='num1 img'>
-				 <a  target=""><img src='foto/sniper.jpg' alt='Shotgun Custom Work' title='bullet' /> </a> 
-			</li>
-			<li class='num2 img'>
-				 <a  target=""><img src='foto/1911chrome.jpg' alt='1911' title='1911' /> </a> 
-			</li>
-		
-		</ul>
-		<div class='cs_description'>
-			<label class='num0'>
-				<span class="cs_title"><span class="cs_wrapper">Katana</span></span>
-			</label>
-			<label class='num1'>
-				<span class="cs_title"><span class="cs_wrapper">Shotgun Custom Work</span></span>
-			</label>
-			<label class='num2'>
-				<span class="cs_title"><span class="cs_wrapper">1911</span></span>
-			</label>
+			<div class="cart">
+				<img src="images/ShoppingCart.png" class="cartlogo">
+				<p class="carttext"> CART </p>
+					<input class="pricezero" type="text"value="0">
+			</div>
+
+			<div class="signIn">
+				<button class="signinbtn">SIGN IN</button>
+			</div>
+		</div>
+		<hr class="line">
+		<div class="botmenu">
+			<div class="botmenubox">
+				<ul class="menu-items">
+						<li><a href=""> TOP SALES </a></li>
+						<li><a href=""> BRAND FOCUS </a></li>
+						<li><a href="">HI-TECH</a></li>
+						<li><a href=""> BEST-SELLERS </a></li>
+						<li><a href=""> PROJECTS </a></li>
+					<li id="support">
+					<a href=""> SUPPORT </a></li>
+				</ul>
+				<div class="secondvline"></div>
+
+				<div class="searchbox">
+					<img src="images/SearchIcon.png" class="searchicon">
+					<input class="searchInput" type="text" placeholder="I'm looking for...">
+				</div>
+			</div>
+		</div>
+		<div class="sliderMainContainer">
+		<div class="sliderContainer">
+		<!-- Slider main container -->
+		<div class="swiper-container">
+		    <!-- Additional required wrapper -->
+		    <div class="swiper-wrapper">
+		        <!-- Slides -->
+		        <div class="swiper-slide"> 
+		        	<p class="slidertextheader">iPhone 6 32Gb<br>Black</p>
+		        	<p class="slidertext">At first, for some time, I was not able to answer him one word;<br>but as he had taken me in his arms I held fast by him, or I should<br>have fallen to the ground.</p> 
+		        	<button class="buynow">BUY NOW</button>
+		        	<img src="images/sliderPhoto.png">
+		        </div>
+		        <div class="swiper-slide"><img src="images/sliderPhoto.png"></div>
+		        <div class="swiper-slide"><img src="images/sliderPhoto.png"></div>
+		        <div class="swiper-slide"><img src="images/sliderPhoto.png"></div>
+		        
+		    </div>
+		    <!-- If we need pagination -->
+		    <div class="swiper-pagination"></div>
+
+		    <!-- If we need navigation buttons -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+
+		    <!-- If we need scrollbar -->
+		    <div class="swiper-scrollbar"></div>
 		</div>
 		</div>
-		<!-- End cssSlider.com -->
-<!-- REPAIR -->
-  <div class="pimg2">
-    <div class="ptext">
-      <span class="border trans">
-        Best Guns Worldwide
-      </span>
-    </div>
-  </div>
+		</div>
+	</header>
 
-  <section class="section section-dark">
-    <h2>Section Two</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-    </p>
-  </section>
-
-  <div class="pimg3">
-    <div class="ptext">
-      <span class="border trans">
-        Best Quality
-      </span>
-    </div>
+	<main>
+		<div class="menuproductsfilter">
+			<ul>
+			<li style="color: #a1a8bd; margin-left: 30px;">SORT BY:</li>
+			<li style="color: #343e5c; margin-left: 50px;">
+				<div class="dropdown">
+			<a id="bestmatchtext" onclick="myFunction()" class="dropbtn">BEST MATCH<i class="down"></i></a>
+			<div id="myDropdown" class="dropdown-content">
+    <a href="#home">category1</a>
+    <a href="#about">category2</a>
+    <a href="#contact">category3</a>
   </div>
-  <section class="section section-dark">
-    <h2>Section Three</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-    </p>
-  </section>
-<!-- <div class="text">
-		<p> ABOUT US </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum iste inventore ipsum culpa autem tempore molestias molestiae facere, sapiente, dolorum nemo ullam pariatur deserunt ut doloremque amet recusandae voluptates asperiores.This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.  </p>	
 </div>
- -->
-<div class="last">
-	<div class="find">
-		<p> FIND US </p> 
-			<div class="textcontainer">
-				<p>
-					500 Terry Francois Street
-					<br>
-					San Francisco, CA 94158 
-					<br><br>
-					 info@mysite.com
-					 <br><br>
-					 Tel: 123-456-7890
-					 <br><br>
-					 OPENING HOURS:
-					 <br><br>
-					Mon - Fri: 7am - 10pm
-					<br><br>
-					Saturday: 8am - 10pm
-					<br><br>
-					Sunday: 8am - 11pm
-				</p>
-			</div>
-			<div class="reg">
-				<form>
-					<input type="text" name="Name" placeholder="Name">
-					<br><br>
-					<input type="text" name="Email" placeholder="Email"><br><br>
-					<input type="text" name="Subject" placeholder="Subject"><br><br>
-					<input class="messag" type="text" name="Message" placeholder="Message"><br><br>
-					<input type="submit">
-				</form>
-			</div>
-</div>
-<footer class="foot">
-	<div class="footer">
-
-	<div class="social">
-    <a href="https://www.facebook.com/"><i id="fb" class="fab fa-facebook-square"></i></a>
-    <a href="https://www.pinterest.com/"><i id="pn" class="fab fa-pinterest"></i></a>
-    <a href="https://www.instagram.com/"><i id="inst" class="fab fa-instagram"></i></a>
-    <a href="https://play.google.com/store/apps"><i id="ps" class="fab fa-google-play"></i></a>
-    <a href="https://www.youtube.com"><i id="yt" class="fab fa-youtube"></i></a>
+		</li>	
+			</ul>
+			<div class="thirdvline"></div>
+			<label class="keywords">KEYWORDS</label>
+			<input class="keywordsinput" type="text" placeholder="Tablet">
+			<label class="price">PRICE</label>
+			<input class="priceinput" type="text" placeholder="10">
+			<label class="minusline">-</label>
+			<input class="priceinput" type="text" placeholder="1000">
+			<label class="container">
+	        <input type="checkbox" checked="checked">
+	        <span class="checkmark"></span>
+	        </label>
+	        <label class="fshipping">Free Shipping</label>
+	        <div class="verticalLine4"></div>
+	        <ul>
+			<li class="shipto">SHIP TO:</li>
+			<li class="usa">
+				<div class="dropdownusa">
+			<a onclick="myFunctionusa()" class="dropbtnusa">USA<i class="down"></i></a>
+			<div id="myDropdownusa" class="dropdown-contentusa">
+    <a href="#home">country1</a>
+    <a href="#about">country2</a>
+    <a href="#contact">country3</a>
   </div>
+</div>
+		</li>
+			</ul>
+	 	</div>
+	 	<div class="maincontent">
+	 	<div class="side-bar">
+				<ul id="dropmenu" class="dropmenu">
+  <li class="f1" >Top Sales<i class="fa fa-chevron-right"></i>
+    <ul class="submenu ul-1">
+      <li><a href="#">PRODUCT 1</a></li>
+      <li><a href="#">PRODUCT 2</a></li>
+      <li><a href="#">PRODUCT 3</a></li>
+    </ul>
+  </li>
+  <li class="f2" >Brend Focus<i class="fa fa-chevron-right"></i>
+    <ul class="submenu ul-2">
+      <li><a href="#">PRODUCT 1</a></li>
+      <li><a href="#">PRODUCT 2</a></li>
+      <li><a href="#">PRODUCT 3</a></li>
+    </ul>
+  </li>
+  <li class="f3" >Hi-Tech<i class="fa fa-chevron-right"></i>
+    <ul class="submenu ul-3">
+      <li><a href="#">Tablet</a></li>
+      <li><a href="#">Mobile</a></li>
+      <li><a href="#">Desktop</a></li>
+    </ul>
+  </li>
+  <li class="f4" >Home<i class="fa fa-chevron-right"></i>
+    <ul class="submenu ul-4">
+      <li><a href="#">PRODUCT 1</a></li>
+      <li><a href="#">PRODUCT 2</a></li>
+      <li><a href="#">PRODUCT 3</a></li>
+    </ul>
+  </li>
+  <li class="f5" >Sale<i class="fa fa-chevron-right"></i>
+    <ul class="submenu ul-5">
+      <li><a href="#">PRODUCT 1</a></li>
+      <li><a href="#">PRODUCT 2</a></li>
+      <li><a href="#">PRODUCT 3</a></li>
+    </ul>
+  </li>
+</ul>
 
-	</div>
-	
-</footer>
+
+<div class="avialableFilter">
+		 		<p class="avialableText"> AVAILABLE </p>
+		 		<div class="horizontalLine"></div>
+		 		<label class="container2">
+         			<input type="radio" name="radio" checked="checked">
+          			<span class="checkmark2"></span>
+       			</label>
+       			<label class="inStorage"> In Storage  </label>
+       			<p class="productCount">45</p>
+
+       			<label class="container3">
+         			<input type="radio" name="radio" >
+          			<span class="checkmark3"></span>
+       			</label>
+
+       			<label class="inOnlineShop"> In Online-Shop </label>
+       			<p class="productCount">12</p>
+       			<div class="horizontalLine" style="margin-top: 100px;"></div>
+
+       			<p class="brandText"> BRANDS </p>
+       			<p class="everyBrand"> <a href=""> ALL </a> </p>
+       			<div class="horizontalLine"></div>
+
+				<div class="brandNames">
+	       			<label class="container4">
+	  					<input type="checkbox" checked="checked">
+	  					<span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName"> Apple </label>
+					<p class="brandCount">32</p> <br>
+
+					<label class="container4">
+					  <input type="checkbox">
+					  <span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName"> JBL </label>
+					<p class="brandCount">14</p> <br>
+
+					<label class="container4">
+					  <input type="checkbox">
+					  <span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName"> Bose </label>
+					<p class="brandCount">3</p> <br>
+
+					<label class="container4">
+					  <input type="checkbox">
+					  <span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName"> Nest </label>
+					<p class="brandCount">5</p>  <br>
+				</div>
+		 	</div>
+
+		 	<div class="conditionFilter">
+		 		<p class="brandText"> CONDITION </p>
+       			<p class="everyBrand"> <a href=""> SEE ALL </a> </p>
+       			<div class="horizontalLine"></div>
+       			<div class="conditionNames">
+	       			<label class="container4">
+	  					<input type="checkbox" checked="checked" >
+	  					<span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName"> New </label> <br>
+
+					<label class="container4">
+					  <input type="checkbox">
+					  <span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName"> Manufacturer Refubrished </label> <br>
+
+					<label class="container4">
+					  <input type="checkbox">
+					  <span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName"> Seller Refubrished </label> <br>
+
+					<label class="container4">
+					  <input type="checkbox">
+					  <span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName"> Used </label> <br>
+
+					<label class="container4">
+					  <input type="checkbox">
+					  <span class="checkmark4"></span>
+					</label>
+
+					<label class="brandName">For Parts or not Working</label> <br>
+				</div>
+		 	</div>
+
+		 	<div class="deliveryOptions">
+		 		<p class="brandText">DELIVERY OPTIONS</p>
+		 		<div class="horizontalLine"></div>
+		 		<label class="container5">
+         			<input type="radio" name="radio" checked="checked">
+          			<span class="checkmark5"></span>
+       			</label>
+
+       			<label class="free-delivery"> FREE </label>
+
+       			<label class="container6">
+         			<input type="radio" name="radio" >
+          			<span class="checkmark6"></span>
+       			</label>
+
+       			<label class="delivery"> $4.99 </label>
+		 	</div>
+
+</div>
+<div class="content" >
+	<div class="product1">
+		 		<img src="images/Photo1.png">
+		 		<p class="productHeadline"><b>APPLE TV 32GB</b></p>
+		 		<p class="productColor">BLACK</p>
+		 		<p class="productPrice">$49.99</p>	
+		 	</div>
+
+		 	<div class="product1">
+		 		<img src="images/Photo2.png" width="100%">
+		 		<p class="productHeadline"><b>Pebble Time</b></p>
+		 		<p class="productColor">RED</p>
+		 		<p class="productPrice">$49.99</p>
+		 	 	</div>
+		 	<div class="product1">
+		 		<img src="images/Photo3.png" width="100%">
+		 		<p class="productHeadline"><b>Zendure 4-Port USB</b></p>
+		 		<p class="productColor">WHITE</p>
+		 		<p class="productPrice">$49.99</p>	
+		 	</div>
+		 	<div class="product2">
+		 		<img src="images/Photo4.png" class="photo4">
+		 		<p class="productHeadline" style="margin-top: 30px;"> <b>Withings Smart Body Analyzer ws-50</b> </p>
+		 		<p class="productColor"> BLACK </p>
+		 		<p class="productPrice"> $39.99 </p>		 		
+		 	</div>
+		 	<div class="product3">
+		 		<img src="images/Photo5.png" class="photo5">
+		 		<p class="photo5Price">$39.99</p>
+		 		<p class="photo5Headline"> <b>JBL Charge 2+</b> </p>
+		 		<p class="photo5Color"> BLACK </p>
+		 		<div class="buyNowContainer">
+		 			<p class="capacityCount"> 16 GB </p>
+					<div class="verticalLine" style="height: 30px;"></div>
+		 			<p class="buyNow"> <a href=""> BUY NOW </a> </p>
+		 		</div>	 		
+		 	</div>
+		 	<div class="product4">
+		 		<img src="images/Photo6.png" width="100%">
+		 		<p class="product4headline" style="padding-bottom: 20px;"> <b>Ollo Clip New</b> </p>
+		 		<p class="productColor"> SILVER </p>
+		 		<p class="productPrice"> $19.99 </p>	 		
+		 	</div>
+		 	<div class="product5">
+		 		<img src="images/Photo7.png" width="100%">
+		 		<p class="productHeadline"> <b>Fitbit Charge HR Heart Rate and Activity Tracker</b> </p>
+		 		<p class="productColor"> BLACK </p>
+		 		<p class="productPrice"> $19.99 </p>		 		
+		 	</div>
+		 	<div class="product6">
+		 		<img src="images/Photo8.png" class="photo8">
+		 		<p class="productHeadline" style="margin-top: 25px;"> <b>Apple Watch Sport 38mm Silver Aluminum Case</b> </p>
+		 		<p class="productColor"> BLACK </p>
+		 		<p class="productPrice"> $49.99 </p>	
+		 	</div>
+		 	<div class="product7">
+		 		<img src="images/Photo9.png" width="100%">
+		 		<p class="productHeadline"> <b>Bose SoundLink On-Ear Headphones</b> </p>
+		 		<p class="productColor"> WHITE </p>
+		 		<p class="productPrice"> $119.99 </p>	
+		 	</div>
+		 	<div class="product8" style="margin-top: 30px;">
+		 		<img src="images/Photo10.png" class="photo10">
+		 		<p class="productHeadline"  style="margin-top: 15px;"> <b>Sonos Play-1 Wireless HiFi System</b> </p>
+		 		<p class="productColor"> BLACK </p>
+		 		<p class="productPrice"> $99.99 </p>	
+		 	</div>
+		 	<div class="product9" style="margin-top: 30px;">
+		 		<img src="images/Photo11.png" width="100%" height="100%;">
+		 		<p class="productHeadline" style="margin-top: -350px; "> <b>Fitbit Charge HR Heart Rate and Activity Tracker</b> </p>
+		 		<p class="productPrice" style="color: #605f5e;"> $49.99 </p>
+		 	</div>
+
+
+</div>
+</div>
+<div class="pageContainer">
+		 		<a href=""> <i class="pagePrev left"></i> </a> 
+		 		<div class="pagenumbersbox"> 
+			 		<a href="" class="pagenum">1</a>
+			 		<a href="" class="pagenum">2</a>
+			 		<a href="" class="pagenum">3</a>
+			 		<a href="" class="pagenum">4</a>
+			 		<a href="" class="pagenum">5</a>
+			 		<a href="" class="pagenum">6</a>
+			 		<a href="" class="pagenum">7</a>
+			 		<a href="" class="pagenum">8</a>
+		 		</div>
+		 		<a href=""><i class="pageNext right"></i></a>
+		 	</div>
+		 	<div class="bestSellers">
+		 		<p class="bestSellersText">BEST SELLERS</p>
+		 		<div class="horizontalLine2"></div>
+		 		<div class="bestProduct">
+			 		<img src="images/Photo12.png" style="margin-left: 50px; margin-top: 45px;">
+			 		<p class="productHeadline2"><b>BEANIE</b></p>
+			 		<p class="productColor">GREEN</p>
+			 		<p class="productPrice2">$29.99</p>
+			 		<p class="productPrice3">$19.99</p>	 		
+		 		</div>
+		 		<div class="verticalLine5"></div>	
+		 		<div class="bestProduct">
+			 		<img src="images/Photo13.png" style="margin-left: 60px;">
+			 		<p class="productHeadline2" style="margin-top: -30px"> <b>T-Shirt With a Print</b> </p>
+			 		<p class="productColor">BLACK</p>
+			 		<p class="productPrice2">$29.99</p>
+			 		<p class="productPrice3">$19.99</p>	 		
+		 		</div>
+		 		<div class="verticalLine5"></div>	
+		 		<div class="bestProduct">
+			 		<img src="images/Photo14.png" style="margin-left: 60px; margin-top: 10px;">
+			 		<p class="productHeadline2" style="margin-top: -15px;"> <b>Pile-Lined Hooded Jacket</b> </p>
+			 		<p class="productColor">BLACK</p>
+			 		<p class="productPrice2">$29.99</p>
+			 		<p class="productPrice3">$19.99</p>
+		 		</div>		 
+			 	<div class="verticalLine5"></div>	
+		 		<div class="bestProduct">
+			 		<img src="images/Photo15.png" style="margin-left: 60px; margin-top: 20px;">
+			 		<p class="productHeadline2" style="margin-top: -68px"> <b>Trainers</b> </p>
+			 		<p class="productColor">BLACK</p>
+			 		<p class="productPrice2">$29.99</p>
+			 		<p class="productPrice3">$19.99</p>
+		 		</div>
+		 	</div>
+		</div>	 	
+	</main>
+	<footer>
+	 	<div class="customers">
+				<div class="customerscontent">
+					<p class="customersheader">What Our Customers Have To Say</p>
+					<p class="customersheadertext">Couple of Words About This Stories Section</p>
+					<div class="story1">
+						<img src="images/Story1.png" class="story1Photo">
+						<p class="name">Calia Fields</p> <br>
+						<p class="professionText">UX Expert</p>
+						<p class="storytext">This I have produced as a scantling <br> of Jack’s great eloquence and the <br> force of his reasoning upon such <br>abstruse matters.</p>
+					</div>
+					<div class="story2">
+						<img src="images/Story2.png" class="story2Photo">
+						<p class="name">Alexander Lee</p> <br>
+						<p class="professionText">Founder</p>
+						<p class="storytext">Looking cautiously round, to ascertain <br> that they were not overheard, the two <br> hags cowered nearer to the fire, and <br> chuckled heartily.</p>
+						
+					</div>
+					<div class="story3">
+						<img src="images/Story3.png" class="story3Photo">
+						<p class="name">Lenora Sandoval</p> <br>
+						<p class="professionText">Product Manager</p>
+						<p class="storytext">This sounded a very good reason, and <br> Alice was quite pleased to know it. 'I <br> never thought of that before!' <br>she said.</p>
+					</div>
+				</div>
+	 	</div>
+	 	<div class="footer">
+	 		<div class="footercontent">
+	 			<img src="images/footerLogo.png" class="footericon">
+	 			<ul class="footermenu">
+	 						<li><a href="">HOME</a></li>
+	 						<li><a href="">SHOP</a></li>
+	 						<li><a href="">TEAM</a></li>
+	 						<li><a href="">ABOUT US</a></li>
+	 						<li><a href="">CONTACTS</a></li>
+	 			</ul>
+	 			<div class="socialiconsbox">
+	 				<a href="https://twitter.com/?lang=en">
+	 				<img class="soc1" src="images/TwitterIcon.png" class="iconImage"></a>
+	 				<a href="https://www.facebook.com/">
+	 				<img class="soc2" src="images/FacebookIcon.png" class="iconImage"></a>
+	 				<a href="https://plus.google.com/discover">
+	 				<img class="soc3" src="images/G+Icon.png" class="iconImage"></a>
+	 			</div>
+	 			<div class="horizontalLine3"></div>
+
+	 			<div class="footerTextContainer">
+	 				<p class="footerText">She gave my mother such a turn, that I have always been convinced I am indebted to Miss <br> Betsey for having been born on a Friday.</p>
+	 				<ul class="footertext2">
+	 						<li><a href="">PRIVACY POLICY</a></li>
+	 						<li><a href="">TERMS AND CONDITIONS</a></li>
+	 				</ul>
+	 			</div>
+	 		</div>
+	 	</div>
+	</footer>
+	    <script src="dist/js/swiper.min.js"></script>
+	<script>
+		  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+
+   
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+ 
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+	</script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-// xupscroll
+
+$(function() {
+  var dropmenu = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+    var links = this.el.find('.link');
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
+
+  dropmenu.prototype.dropdown = function(e) {
+    var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  } 
+
+  var dropmenu = new dropmenu($('#dropmenu'), false);
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
 </script>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
 
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script>
+function myFunctionusa() {
+    document.getElementById("myDropdownusa").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtnusa')) {
 
+    var dropdowns = document.getElementsByClassName("dropdown-contentusa");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	
+		$(document).ready(function(){
+    		$(".f1").click(function(){
+        	$(".ul-1").toggle();
+        	$("[class^='ul-']:not(.ul-1)").hide();
+        });
+        	$(".f2").click(function(){
+        	$(".ul-2").toggle();
+        	$("[class^='ul-']:not(.ul-2)").hide();
+        });
+        	$(".f3").click(function(){
+        	$(".ul-3").toggle();
+        	$("[class^='ul-']:not(.ul-3)").hide();
+        });
+        	$(".f4").click(function(){
+        	$(".ul-4").toggle();
+        	$("[class^='ul-']:not(.ul-4)").hide();
+        	}); 
+        	$(".f5").click(function(){
+        	$(".ul-5").toggle();
+        	$("[class^='ul-']:not(.ul-5)").hide();
+        });
+});
+
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 
